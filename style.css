@@ -117,6 +117,21 @@ section h2 {
   font-size: 1.75rem;
 }
 
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent2);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #1f8a4c;
+}
+
 .tech-stack ul {
   list-style: none;
   padding-left: 0;
@@ -189,9 +204,10 @@ section h2 {
 .animated-name {
   font-size: 3.5rem;
   font-weight: 900;
-  background: linear-gradient(90deg, #bcb8b3, #9B51E0);
-  
+  background: linear-gradient(90deg, #2F80ED, #9B51E0);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
   margin-bottom: 1rem;
 }
 

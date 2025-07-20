@@ -1,0 +1,260 @@
+/* Final Style: Ayush Upadhyay Portfolio - Custom CSS with Color Palette */
+
+:root {
+  --primary: #2F80ED;
+  --secondary: #333333;
+  --background: #FFFFFF;
+  --accent1: #56CCF2;
+  --accent2: #27AE60;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--secondary);
+  scroll-behavior: smooth;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-tabs ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-tabs a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-tabs a:hover {
+  color: var(--primary);
+}
+
+.navbar-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-social a img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(91%) saturate(610%) hue-rotate(182deg) brightness(100%) contrast(92%);
+  transition: transform 0.3s ease;
+}
+
+.navbar-social a img:hover {
+  transform: scale(1.1);
+}
+
+.landing {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: var(--background);
+}
+
+.landing h1 {
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.landing h2 {
+  font-size: 1.5rem;
+  color: #555555;
+}
+
+.landing .button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent2);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.landing .button:hover {
+  background-color: #1f8a4c;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+section h2 {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+  font-size: 1.75rem;
+}
+
+.tech-stack ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tech-stack li {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  animation: popIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.tech-stack li img {
+  width: 48px;
+  height: 48px;
+}
+
+.tech-stack li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(47, 128, 237, 0.3);
+  border-color: var(--primary);
+}
+
+@keyframes popIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.projects .project {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+.projects a {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.landing {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at top left, #f0f0f0, #fef9ff);
+  overflow: hidden;
+  animation: fadeUp 1.4s ease both;
+}
+
+.animated-name {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #bcb8b3, #9B51E0);
+  
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  max-width: 720px;
+  margin: 0 auto 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #27AE60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1f8a4c;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects a:hover {
+  color: var(--accent1);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background);
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
